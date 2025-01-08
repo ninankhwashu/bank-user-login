@@ -32,7 +32,7 @@
             id="password"
             required
           />
-          <button>Sign Up</button>
+          <button>SIGN UP</button>
         </form>
       </div>
       <div class="form-container sign-in">
@@ -41,7 +41,7 @@
 
           <input
             type="email"
-            placeholder="Email or Username"
+            placeholder="Email Address or Username"
             id="email"
             required
           />
@@ -51,16 +51,37 @@
             id="password"
             required
           />
-          <a href="#">Forgot Your Password?</a>
-          <button>Sign In</button>
+          <a href="#reset-password">Forgot Your Password?</a>
+
+          <button>SIGN IN</button>
         </form>
+        <div
+          class="form-container reset-password"
+          id="reset-password"
+          style="left: 100%; opacity: 0"
+        >
+          <form>
+            <h1>Reset Your Password</h1>
+            <p>Enter the email address you used to register</p>
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="reset-email"
+              required
+            />
+
+            <button type="submit" id="nextButton">NEXT</button>
+            <button type="button" id="cancelButton">CANCEL</button>
+          </form>
+        </div>
       </div>
+
       <div class="toggle-container">
         <div class="toggle-panel toggle-left">
           <img src="src/bank-logo.svg" alt="Bank Logo" class="logo" />
-          <h1>Sign In!</h1>
-          <p>Enter your personal details to access your account.</p>
-          <button class="hidden" id="login">Sign In</button>
+          <h1>Already Have An Account?</h1>
+          <p>Enter your personal details to access your account!</p>
+          <button class="hidden" id="login">SIGN IN</button>
         </div>
         <div class="toggle-panel toggle-right">
           <img src="src/bank-logo.svg" alt="Bank Logo" class="logo" />
@@ -69,7 +90,7 @@
             Register with your personal details to access Standard Bank®
             financial services!
           </p>
-          <button class="hidden" id="register">Sign Up</button>
+          <button class="hidden" id="register">SIGN UP</button>
         </div>
       </div>
     </div>
