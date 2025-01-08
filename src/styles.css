@@ -53,9 +53,18 @@ body {
   border-radius: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
   margin-top: 10px;
   cursor: pointer;
+}
+
+.sign-up button:hover {
+  background-color: #1244b9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sign-in button:hover {
+  background-color: #1244b9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .container button.hidden {
@@ -67,7 +76,6 @@ body {
   border-radius: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
   margin-top: 10px;
   cursor: pointer;
 }
@@ -114,7 +122,7 @@ body {
 
 .form-container a {
   color: #0132a2;
-  font-size: 14px;
+  font-size: 15px;
   text-decoration: underline;
 }
 
@@ -229,4 +237,69 @@ body {
 
 .container.active .toggle-right {
   transform: translateX(200%);
+}
+
+.toggle-panel.toggle-left button:hover {
+  background-color: #0089ff;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-panel.toggle-right button:hover {
+  background-color: #0089ff;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.reset-password {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  transition: left 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  z-index: 2;
+  opacity: 0;
+}
+
+.container.show-reset .reset-password {
+  left: 0%;
+  opacity: 1;
+}
+.reset-password input[type="email"]::placeholder {
+  font-size: 15px;
+}
+
+#nextButton {
+  background-color: #0132a2;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 45px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#cancelButton {
+  background-color: #ffffff;
+  color: #0132a2;
+  font-size: 15px;
+  padding: 10px 36px;
+  border: none;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#nextButton:hover {
+  background-color: #1244b9;
+}
+#cancelButton:hover {
+  background-color: #0089ff;
+  color: #ffffff;
 }
